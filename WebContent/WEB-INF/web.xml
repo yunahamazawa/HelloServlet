@@ -5,8 +5,9 @@ xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
 http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
  	<display-name>HelloServlet</display-name>
  	<welcome-file-list>
- 		<welcome-file>index.jsp</welcome-file>
+ 	<welcome-file>index.jsp</welcome-file>
  	</welcome-file-list>
+
 
  <servlet>
  	<servlet-name>Hello</servlet-name>
@@ -30,11 +31,21 @@ http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1"
 
  	<servlet>
  	<servlet-name>Inquiry</servlet-name>
-	 <servlet-class>InquiryServlet</servlet-class>
+ 	<servlet-class>InquiryServlet</servlet-class>
  </servlet>
  <servlet-mapping>
  	<servlet-name>Inquiry</servlet-name>
  	<url-pattern>/HelloServlet/InquiryServlet</url-pattern>
+ </servlet-mapping>
+
+
+ <servlet>
+	 <servlet-name>Test</servlet-name>
+ 	<servlet-class>TestServlet</servlet-class>
+ </servlet>
+ 	<servlet-mapping>
+ 	<servlet-name>Test</servlet-name>
+	 <url-pattern>/HelloServlet/TestServlet</url-pattern>
  </servlet-mapping>
 
 
